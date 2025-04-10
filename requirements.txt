@@ -1,0 +1,8 @@
+speechrecognition
+pyttsx3
+google-api-python-client
+google-auth
+google-auth-oauthlib
+langchain
+ollama
+#x6aoh4VVU27BVZ1mHQMGa2EMqE0aee1wy63qK5M4lpyWudjY/ucrjQ==
