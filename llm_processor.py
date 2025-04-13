@@ -11,27 +11,46 @@ from sheets_helper import fetch_event_data
 # === Initialize LLM ===
 llm = OllamaLLM(model="llama3.2")  # Ensure llama3.2 is pulled via Ollama
 
-# === Load and embed internal memory ===
+# === Memory file paths ===
 INTERNAL_MEM_PATH = "internal_memory.txt"
+PERMANENT_MEM_PATH = "Cerebral_cortex.txt"
 VECTOR_STORE_DIR = "rag_memory"
 
 embedding = OllamaEmbeddings(model="llama3.2")
 
-if not os.path.exists(VECTOR_STORE_DIR):
-    # First-time setup: load and split memory, then embed
-    loader = TextLoader(INTERNAL_MEM_PATH, encoding="utf-8")
-    docs = loader.load()
+# === Function to load and embed memory ===
+def build_vectorstore():
+    combined_text = ""
 
+    # Load permanent memory
+    if os.path.exists(PERMANENT_MEM_PATH):
+        with open(PERMANENT_MEM_PATH, "r", encoding="utf-8") as f:
+            combined_text += f.read() + "\n"
+
+    # Load internal memory
+    if os.path.exists(INTERNAL_MEM_PATH):
+        with open(INTERNAL_MEM_PATH, "r", encoding="utf-8") as f:
+            combined_text += f.read()
+
+    # Save to a temp file for loading
+    with open("temp_combined_memory.txt", "w", encoding="utf-8") as f:
+        f.write(combined_text)
+
+    loader = TextLoader("temp_combined_memory.txt", encoding="utf-8")
+    docs = loader.load()
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
     split_docs = splitter.split_documents(docs)
 
-    vectorstore = Chroma.from_documents(
+    return Chroma.from_documents(
         documents=split_docs,
         embedding=embedding,
         persist_directory=VECTOR_STORE_DIR
     )
+
+# === Initialize vectorstore ===
+if not os.path.exists(VECTOR_STORE_DIR):
+    vectorstore = build_vectorstore()
 else:
-    # Load existing embedded memory
     vectorstore = Chroma(
         persist_directory=VECTOR_STORE_DIR,
         embedding_function=embedding
@@ -60,6 +79,7 @@ Now, using your internal memory and event data, answer the following question:
 """
 
     return qa_chain.run(full_prompt)
+
 # === Sync function for manual Google Sheet update ===
 def sync_google_sheet():
     try:
@@ -67,26 +87,16 @@ def sync_google_sheet():
         if not data or len(data) <= 1:
             return False
 
-        # Format and refresh memory with updated sheet content
+        # Format and refresh internal memory
         rows = data[1:]
         updated_context = "\n".join([", ".join(row) for row in rows])
 
         with open(INTERNAL_MEM_PATH, "w", encoding="utf-8") as f:
             f.write(updated_context)
 
-        # Rebuild the vectorstore with new context
-        loader = TextLoader(INTERNAL_MEM_PATH, encoding="utf-8")
-        docs = loader.load()
-
-        splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
-        split_docs = splitter.split_documents(docs)
-
+        # Rebuild vectorstore with permanent + internal memory
         global vectorstore, qa_chain
-        vectorstore = Chroma.from_documents(
-            documents=split_docs,
-            embedding=embedding,
-            persist_directory=VECTOR_STORE_DIR
-        )
+        vectorstore = build_vectorstore()
 
         qa_chain = RetrievalQA.from_chain_type(
             llm=llm,

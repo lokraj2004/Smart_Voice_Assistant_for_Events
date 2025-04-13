@@ -3,8 +3,10 @@ import pyttsx3
 from llm_processor import handle_query_with_llm
 from llm_processor import sync_google_sheet
 from history_logger import HistoryLogger
+
 import pvporcupine
 import pyaudio
+
 import struct
 import time
 
@@ -12,7 +14,7 @@ import time
 ACCESS_KEY = "x6aoh4VVU27BVZ1mHQMGa2EMqE0aee1wy63qK5M4lpyWudjY/ucrjQ==" # picovoice API Key
 WAKE_WORD = "jarvis" #Wake word
 CONVERSATION_TIMEOUT = 30  # seconds of idle time before returning to wake-word mode
-DEVICE_INDEX = 2  # Your preferred microphone
+DEVICE_INDEX =2  # Your preferred microphone
 LONG_QUERY_THRESHOLD = 20  # Words
 
 engine = pyttsx3.init()
@@ -66,7 +68,7 @@ def is_logging_command(query):
     return None
 
 # === Speech recognition after wake word ===
-def listen_for_query(timeout=5, phrase_time_limit=10, pause_threshold=1.2):
+def listen_for_query(timeout=5, phrase_time_limit=10, pause_threshold=1.5):
     recognizer = sr.Recognizer()
     recognizer.dynamic_energy_threshold = True
     recognizer.pause_threshold = pause_threshold
@@ -74,11 +76,13 @@ def listen_for_query(timeout=5, phrase_time_limit=10, pause_threshold=1.2):
     with sr.Microphone(device_index=DEVICE_INDEX, sample_rate=16000) as source:
         print("🎤 Adjusting for ambient noise...")
         recognizer.adjust_for_ambient_noise(source, duration=1)
-        print("🎤 Listening for user query...")
+        speak("Listening")
+
         audio = recognizer.listen(source, timeout=timeout, phrase_time_limit=phrase_time_limit)
 
     try:
-        query = recognizer.recognize_google(audio)
+        preferred_language = 'en-IN'  # Indian English accent
+        query = recognizer.recognize_google(audio, language=preferred_language)
         print("🧍 You said:", query)
         return query
     except sr.WaitTimeoutError:
@@ -127,7 +131,8 @@ def detect_wake_word():
         frames_per_buffer=porcupine.frame_length
     )
 
-    print("🟢 Assistant is listening for wake word...")
+    speak("Hello! I’m Simba")
+
 
     try:
         while True:
@@ -136,6 +141,7 @@ def detect_wake_word():
 
             keyword_index = porcupine.process(pcm)
             if keyword_index >= 0:
+
                 print("✅ Wake word detected!")
                 speak("Yes, how can I help?")
 
