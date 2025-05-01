@@ -1,12 +1,9 @@
 import threading
-from docx import Document
 from datetime import datetime
 
 class HistoryLogger:
-    def __init__(self, file_path="interaction_history.docx"):
+    def __init__(self, file_path="Chat_history.txt"):
         self.file_path = file_path
-        self.document = Document()
-        self.document.add_heading('User Interaction History', 0)
         self.lock = threading.Lock()
         self.logging_active = False
 
@@ -28,14 +25,17 @@ class HistoryLogger:
             return
         with self.lock:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            self.document.add_paragraph(f"[{timestamp}] 🧍 You: {user_input}")
-            if response:
-                self.document.add_paragraph(f"[{timestamp}] 🤖 Assistant: {response}")
+            with open(self.file_path, "a", encoding="utf-8") as file:
+                file.write(f"[{timestamp}] 🧍 You: {user_input}\n")
+                if response:
+                    file.write(f"[{timestamp}] 🤖 Assistant: {response}\n")
 
     def save(self):
-        with self.lock:
-            self.document.save(self.file_path)
+        # In this version, 'save' isn't strictly necessary since we're directly appending to the file.
+        pass
 
     def _log_message(self, msg):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        self.document.add_paragraph(f"[{timestamp}] {msg}")
+        with open(self.file_path, "a", encoding="utf-8") as file:
+            file.write(f"[{timestamp}] {msg}\n")
+

@@ -1,8 +1,23 @@
 speechrecognition
-pyttsx3
-google-api-python-client
+pyttsx3~=2.98
+google-api-python-client~=2.166.0
 google-auth
 google-auth-oauthlib
-langchain
+langchain~=0.3.23
 ollama
+
+
+pvporcupine~=3.0.5
+PyAudio~=0.2.14
+noisereduce~=3.0.3
+numpy~=1.26.4
+sounddevice~=0.5.1
+faster-whisper~=1.1.1
+langchain-community~=0.3.21
+protobuf~=5.29.4
+
+
+
+
+
 

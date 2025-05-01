@@ -1,36 +1,162 @@
-APRIL 16TH 2025
-Serial number, Event type, Event name, Event description, No. of rounds, Event Coordinators, Venue, Timings
-1, TECHNICAL EVENTS , Paper presentation , A paper presentation is your chance to share your research or ideas. You'll give a structured talk and answer questions afterwards. Beforehand, submit a short summary (200-500 words) covering your topic, how you approached it, and what you found., 1, ABINAYA. N , KISHORE. K.S , Meenakshi Sundararajan Engineering College, -
-2, , Hackathon , Selected teams build a working prototype or simulation of their idea and demonstrate it tFill in the blanks with appropriate word. Remember, even if your prototype wobbles a bit, it’s still one step closer to greatness. Go build something amazing! , 2, AADHITYA. S.V, AMRUTHA. V , Meenakshi Sundararajan Engineering College, -
-3, , Wired wonders , Wired Wonders is an exciting electronics competition with multiple rounds testing your skills, quick thinking, and teamwork.Round 1: Resistor Riddle & Circuit Conundrum
-Round 2: Blind Build Battle Round 3: Bidding for Brilliance "The only thing faster than a computer’s processing power is your quick thinking—let's see what you've got!" 
-, 3, MADHUMITA J B , MANOJ G , Meenakshi Sundararajan Engineering College, -
-4, , Byte the dice, Dice throws you into dynamic challenges where teamwork, sharp thinking, and creativity pave the way to glory. May the code be with you! Good luck, and don’t forget—fortune favors the bold., 3, ADITYA. P, DIVYA LAKSHMI. V, Meenakshi Sundararajan Engineering College, -
-5, , Robo craze , Gear up for Robot Craze—the ultimate clash of bots! Customize, strategize, and dominate futuristic arenas in high-octane battles or daring missions. May your bots stay strong and your strategies sharper! Good luck, champions, and remember—robots don’t sweat, but you might!, 2, ABINAYA. K, ABISHEK. A, Meenakshi Sundararajan Engineering College, -
-6, , Design 2 Dev, From idea to code—Design to Development connects creative design with precise implementation, empowering smooth teamwork. Good luck, creators! May your transitions be seamless and your innovations dazzling!, 2, KASIFA FARWEEN. M, GAYATHRI. G, MADHUMITHA M, Meenakshi Sundararajan Engineering College, -
-7, , DecodeX, Code, debug, conquer! This event puts your problem-solving skills to the ultimate test as you decode logic and fix what’s broken. Good luck, tech wizards—may your code compile without drama and your logic be as sharp as a semicolon, 3, JESILIA. S, BARATH. A, Meenakshi Sundararajan Engineering College, -
-8, NON-TECHNICAL EVENTS, OJINGEO, Step into OJINGEO, where every game is an unpredictable adventure! Test your wits, teamwork, and quick thinking to conquer challenges and outsmart the odds. Good luck, players—may the smartest moves and quickest minds win! And remember, in the game of survival, hesitation is not an option!, 5, BALASUNDHARAM. J,  CHAITHANYA. S , Meenakshi Sundararajan Engineering College, -
-9, , Aural bliss , a thrilling non-tech musical event designed to test your knowledge, speed, and love for music
-ROUND 1: Guess the Song from the BGMr
-ROUND 2: Image Connection
-ROUND 3: Identify the Actor/Actress from Childhood Photos
-"Brace yourselves for a melody-packed showdown! From guessing BGMs to solving puzzles and untangling lyrics, this event is your ultimate test of musical mastery. Good luck, maestros—may your notes never falter and your puzzles always click! 🎵 And remember, if in doubt, just hum it out!, 3, DHARSHINI. S ,MANIKANDAN S , Meenakshi Sundararajan Engineering College, -
-10, , Unscramble and hunt, A intellectual non-tech event for the ultimate test of speed, logic, and teamwork
-ROUND 1: UNSCRAMBLE RUSH
-ROUND 2: PUZZLE HUNT  Speed, smarts, and teamwork collide in Unscramble & Hunt! Crack words at lightning speed, hunt hidden pieces, and assemble them before time's up. Good luck, adventurers—may your brains be sharp, your instincts sharper, and your hunts legendary! And remember, treasure loves those who chase it boldly
-, 2, -, Meenakshi Sundararajan Engineering College, -
-11, , Senpai Fans, A fun non-technical event for all the fiction lovers where they’ll come together to explore the art, culture, and influence of anime
-ROUND 1: Otaku Blitz (Rapid-Fire Quiz) 
-ROUND 2: Anime Battle Royale (Debate Round)
-ROUND 3: : The Ultimate Weeb Challenge
-Calling all anime enthusiasts! Dive into a world of art, culture, and thrilling games that test your memory and knowledge of iconic animes, mangas, and comics. Good luck, dreamers—may your fandom guide you to victory! And remember, every otaku has their day, 3, KATHIRESAN. D, KISHORE. M, Meenakshi Sundararajan Engineering College, -
-12, , Cricbuzz , This event will feature two distinct rounds designed to test participants' cricket knowledge and strategic thinking.
-ROUND 1: Cricket Moment Analysis and General Knowledge Quiz
-ROUND 2: Strategic Team Formation and Scenario-Based Analysis  Get ready for Cricbuzz, where cricket smarts meet strategic brilliance in two thrilling rounds! It's all about knowledge, fun, and a dash of competitive spirit. Good luck, sports stars—may your innings be unforgettable and your strategies as sharp as a Yorker! 🏏 And remember, every great game starts with great teamwork!
-, 2, HARIHARAN. L, HARINI. B, BARATH. E , Meenakshi Sundararajan Engineering College, -
-13, , Zeus spark, It is an interactive session that test their wit, spontaneity, and problem-solving skills with fun.
-ROUND 1: EMOJI QUIZ
-ROUND 2: MOVIE PLOTS
-ROUND 3: SILENT ACTING
-"Unleash your brilliance with Zeus’ Spark! Dive into thrilling challenges that test creativity, teamwork, and quick thinking. Good luck, trailblazers—may your sparks light up the path to victory! And remember, Zeus approves of bold moves!, 3, DIWAKAR. B, , Meenakshi Sundararajan Engineering College, -
-14, Workshop, Drone workshop, for the drone, by the drone, of the drone. KAMESH R  is a drone., 0, GOBIKA. R, KAMESH. R, Meenakshi Sundararajan Engineering College, -
+
+
+ ### Pranav 2K25 — Event Details
+
+🔹 Event 1
+
+- Serial number: 1
+- Event type: TECHNICAL EVENTS
+- Event name: Paper presentation
+- Event description: A paper presentation is your chance to share your research or ideas. You'll give a structured talk and answer questions afterwards. Beforehand, submit a short summary (200-500 words) covering your topic, how you approached it, and what you found.
+- No. of rounds: 1
+- Event Coordinators: ABINAYA. N , KISHORE. K.S
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 2
+
+- Serial number: 2
+- Event type: TECHNICAL EVENTS
+- Event name: Hackathon
+- Event description: Selected teams build a working prototype or simulation of their idea and demonstrate it .Fill in the blanks with appropriate word. Remember, even if your prototype wobbles a bit, it’s still one step closer to greatness. Go build something amazing!
+- No. of rounds: 2
+- Event Coordinators: AADHITYA. S.V, AMRUTHA. V
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 3
+
+- Serial number: 3
+- Event type: TECHNICAL EVENTS
+- Event name: Wired wonders
+- Event description: Wired Wonders is an exciting electronics competition with multiple rounds testing your skills, quick thinking, and teamwork.Resistor Riddle & Circuit Conundrum. Blind Build Battle. Bidding for Brilliance "The only thing faster than a computer’s processing power is your quick thinking—let's see what you've got!"
+- No. of rounds: 3
+- Event Coordinators: MADHUMITA J B , MANOJ G
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 4
+
+- Serial number: 4
+- Event type: TECHNICAL EVENTS
+- Event name: Byte the dice
+- Event description: Dice throws you into dynamic challenges where teamwork, sharp thinking, and creativity pave the way to glory. May the code be with you! Good luck, and don’t forget—fortune favors the bold.
+- No. of rounds: 3
+- Event Coordinators: ADITYA. P, DIVYA LAKSHMI. V
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 5
+
+- Serial number: 5
+- Event type: TECHNICAL EVENTS
+- Event name: Robo craze
+- Event description: Gear up for Robot Craze—the ultimate clash of bots! Customize, strategize, and dominate futuristic arenas in high-octane battles or daring missions. May your bots stay strong and your strategies sharper! Good luck, champions, and remember—robots don’t sweat, but you might!
+- No. of rounds: 2
+- Event Coordinators: ABINAYA. K, ABISHEK. A
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 6
+
+- Serial number: 6
+- Event type: TECHNICAL EVENTS
+- Event name: Design 2 Dev
+- Event description: From idea to code—Design to Development connects creative design with precise implementation, empowering smooth teamwork. Good luck, creators! May your transitions be seamless and your innovations dazzling!
+- No. of rounds: 2
+- Event Coordinators: KASIFA FARWEEN. M, GAYATHRI. G, MADHUMITHA M
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 7
+
+- Serial number: 7
+- Event type: TECHNICAL EVENTS
+- Event name: DecodeX
+- Event description: Code, debug, conquer! This event puts your problem-solving skills to the ultimate test as you decode logic and fix what’s broken. Good luck, tech wizards—may your code compile without drama and your logic be as sharp as a semicolon
+- No. of rounds: 3
+- Event Coordinators: JESILIA. S, BARATH. A
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 8
+
+- Serial number: 8
+- Event type: NON-TECHNICAL EVENTS
+- Event name: OJINGEO
+- Event description: Step into OJINGEO, where every game is an unpredictable adventure! Test your wits, teamwork, and quick thinking to conquer challenges and outsmart the odds. Good luck, players—may the smartest moves and quickest minds win! And remember, in the game of survival, hesitation is not an option!
+- No. of rounds: 5
+- Event Coordinators: BALASUNDHARAM. J,  CHAITHANYA. S
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 9
+
+- Serial number: 9
+- Event type: NON-TECHNICAL EVENTS
+- Event name: Aural bliss
+- Event description: a thrilling non-tech musical event designed to test your knowledge, speed, and love for music
+"Brace yourselves for a melody-packed showdown! From guessing BGMs to solving puzzles and untangling lyrics, this event is your ultimate test of musical mastery. Good luck, maestros—may your notes never falter and your puzzles always click! 🎵 And remember, if in doubt, just hum it out!
+- No. of rounds: 3
+- Event Coordinators: DHARSHINI. S ,MANIKANDAN S
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 10
+
+- Serial number: 10
+- Event type: NON-TECHNICAL EVENTS
+- Event name: Unscramble and hunt
+- Event description: A intellectual non-tech event for the ultimate test of speed, logic, and teamwork. Speed, smarts, and teamwork collide in Unscramble & Hunt! Crack words at lightning speed, hunt hidden pieces, and assemble them before time's up. Good luck, adventurers—may your brains be sharp, your instincts sharper, and your hunts legendary! And remember, treasure loves those who chase it boldly
+- No. of rounds: 2
+- Event Coordinators: Anfaal, Harris
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 11
+
+- Serial number: 11
+- Event type: NON-TECHNICAL EVENTS
+- Event name: Senpai Fans
+- Event description: A fun non-technical event for all the fiction lovers where they’ll come together to explore the art, culture, and influence of anime
+
+Calling all anime enthusiasts! Dive into a world of art, culture, and thrilling games that test your memory and knowledge of iconic animes, mangas, and comics. Good luck, dreamers—may your fandom guide you to victory! And remember, every otaku has their day
+- No. of rounds: 3
+- Event Coordinators: KATHIRESAN. D, KISHORE. M
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 12
+
+- Serial number: 12
+- Event type: NON-TECHNICAL EVENTS
+- Event name: Cricbuzz
+- Event description: This event will feature two distinct rounds designed to test participants' cricket knowledge and strategic thinking.
+Get ready for Cricbuzz, where cricket smarts meet strategic brilliance in two thrilling rounds! It's all about knowledge, fun, and a dash of competitive spirit. Good luck, sports stars—may your innings be unforgettable and your strategies as sharp as a Yorker! 🏏 And remember, every great game starts with great teamwork!
+- No. of rounds: 2
+- Event Coordinators: HARIHARAN. L, HARINI. B, BARATH. E
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 13
+
+- Serial number: 13
+- Event type: NON-TECHNICAL EVENTS
+- Event name: Zeus spark
+- Event description: It is an interactive session that test their wit, spontaneity, and problem-solving skills with fun.
+"Unleash your brilliance with Zeus’ Spark! Dive into thrilling challenges that test creativity, teamwork, and quick thinking. Good luck, trailblazers—may your sparks light up the path to victory! And remember, Zeus approves of bold moves!
+- No. of rounds: 3
+- Event Coordinators: DIWAKAR. B,
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
+
+🔹 Event 14
+
+- Serial number: 14
+- Event type: Workshop
+- Event name: Drone workshop
+- Event description: for the drone, by the drone, of the drone. KAMESH R  is a drone.
+- No. of rounds: 0
+- Event Coordinators: GOBIKA. R, KAMESH. R
+- Venue: Meenakshi Sundararajan Engineering College
+- Timings: 9.00 AM
